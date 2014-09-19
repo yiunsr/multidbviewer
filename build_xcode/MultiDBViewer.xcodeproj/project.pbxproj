@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83505DB9150C8EF800FCFF80 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83505DB8150C8EF800FCFF80 /* Cocoa.framework */; };
+		83505ED9150CA60F00FCFF80 /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83505E76150CA60F00FCFF80 /* Config.cpp */; };
+		83505EE1150CA60F00FCFF80 /* CubridReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83505E89150CA60F00FCFF80 /* CubridReader.cpp */; };
+		83505EE2150CA60F00FCFF80 /* Array2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83505E8C150CA60F00FCFF80 /* Array2D.cpp */; };
+		83505EE3150CA60F00FCFF80 /* VecArray1D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83505E8E150CA60F00FCFF80 /* VecArray1D.cpp */; };
+		83505EE4150CA60F00FCFF80 /* VecArray2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83505E90150CA60F00FCFF80 /* VecArray2D.cpp */; };
+		83505EE5150CA60F00FCFF80 /* GridRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83505E92150CA60F00FCFF80 /* GridRender.cpp */; };
+		83505EE6150CA60F00FCFF80 /* MainFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83505E94150CA60F00FCFF80 /* MainFrame.cpp */; };
+		83505EE7150CA60F00FCFF80 /* MidInter .cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83505E97150CA60F00FCFF80 /* MidInter .cpp */; };
+		83505EE8150CA60F00FCFF80 /* MultiViewerApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83505E99150CA60F00FCFF80 /* MultiViewerApp.cpp */; };
+		83505EE9150CA60F00FCFF80 /* MultiViewerColDataDlg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83505E9B150CA60F00FCFF80 /* MultiViewerColDataDlg.cpp */; };
+		83505EEA150CA60F00FCFF80 /* MultiViewerConnectDlg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83505E9D150CA60F00FCFF80 /* MultiViewerConnectDlg.cpp */; };
+		83505EEB150CA60F00FCFF80 /* MultiViewerMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83505E9F150CA60F00FCFF80 /* MultiViewerMain.cpp */; };
+		83505EEC150CA60F00FCFF80 /* MultiViewerTableNameDlg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83505EA1150CA60F00FCFF80 /* MultiViewerTableNameDlg.cpp */; };
+		83505EED150CA60F00FCFF80 /* MultiViewerTableNameSelectDlg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83505EA3150CA60F00FCFF80 /* MultiViewerTableNameSelectDlg.cpp */; };
+		83505F11150CA60F00FCFF80 /* SQLData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83505ECA150CA60F00FCFF80 /* SQLData.cpp */; };
+		83505F12150CA60F00FCFF80 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 83505ECD150CA60F00FCFF80 /* sqlite3.c */; };
+		83505F13150CA60F00FCFF80 /* SqliteReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83505ED0150CA60F00FCFF80 /* SqliteReader.cpp */; };
+		83505F14150CA60F00FCFF80 /* SQLReaderBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83505ED2150CA60F00FCFF80 /* SQLReaderBase.cpp */; };
+		83505F15150CA60F00FCFF80 /* SQLUtil .cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83505ED4150CA60F00FCFF80 /* SQLUtil .cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		83505DB4150C8EF800FCFF80 /* MultiDBViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiDBViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83505DB8150C8EF800FCFF80 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		83505DBB150C8EF800FCFF80 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		83505DBC150C8EF800FCFF80 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		83505DBD150C8EF800FCFF80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		83505E76150CA60F00FCFF80 /* Config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Config.cpp; sourceTree = "<group>"; };
+		83505E77150CA60F00FCFF80 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		83505E89150CA60F00FCFF80 /* CubridReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CubridReader.cpp; sourceTree = "<group>"; };
+		83505E8A150CA60F00FCFF80 /* CubridReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubridReader.h; sourceTree = "<group>"; };
+		83505E8C150CA60F00FCFF80 /* Array2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Array2D.cpp; sourceTree = "<group>"; };
+		83505E8D150CA60F00FCFF80 /* Array2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array2D.h; sourceTree = "<group>"; };
+		83505E8E150CA60F00FCFF80 /* VecArray1D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VecArray1D.cpp; sourceTree = "<group>"; };
+		83505E8F150CA60F00FCFF80 /* VecArray1D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VecArray1D.h; sourceTree = "<group>"; };
+		83505E90150CA60F00FCFF80 /* VecArray2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VecArray2D.cpp; sourceTree = "<group>"; };
+		83505E91150CA60F00FCFF80 /* VecArray2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VecArray2D.h; sourceTree = "<group>"; };
+		83505E92150CA60F00FCFF80 /* GridRender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GridRender.cpp; sourceTree = "<group>"; };
+		83505E93150CA60F00FCFF80 /* GridRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridRender.h; sourceTree = "<group>"; };
+		83505E94150CA60F00FCFF80 /* MainFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainFrame.cpp; sourceTree = "<group>"; };
+		83505E95150CA60F00FCFF80 /* MainFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainFrame.h; sourceTree = "<group>"; };
+		83505E97150CA60F00FCFF80 /* MidInter .cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "MidInter .cpp"; sourceTree = "<group>"; };
+		83505E98150CA60F00FCFF80 /* MidInter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidInter.h; sourceTree = "<group>"; };
+		83505E99150CA60F00FCFF80 /* MultiViewerApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiViewerApp.cpp; sourceTree = "<group>"; };
+		83505E9A150CA60F00FCFF80 /* MultiViewerApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiViewerApp.h; sourceTree = "<group>"; };
+		83505E9B150CA60F00FCFF80 /* MultiViewerColDataDlg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiViewerColDataDlg.cpp; sourceTree = "<group>"; };
+		83505E9C150CA60F00FCFF80 /* MultiViewerColDataDlg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiViewerColDataDlg.h; sourceTree = "<group>"; };
+		83505E9D150CA60F00FCFF80 /* MultiViewerConnectDlg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiViewerConnectDlg.cpp; sourceTree = "<group>"; };
+		83505E9E150CA60F00FCFF80 /* MultiViewerConnectDlg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiViewerConnectDlg.h; sourceTree = "<group>"; };
+		83505E9F150CA60F00FCFF80 /* MultiViewerMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiViewerMain.cpp; sourceTree = "<group>"; };
+		83505EA0150CA60F00FCFF80 /* MultiViewerMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiViewerMain.h; sourceTree = "<group>"; };
+		83505EA1150CA60F00FCFF80 /* MultiViewerTableNameDlg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiViewerTableNameDlg.cpp; sourceTree = "<group>"; };
+		83505EA2150CA60F00FCFF80 /* MultiViewerTableNameDlg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiViewerTableNameDlg.h; sourceTree = "<group>"; };
+		83505EA3150CA60F00FCFF80 /* MultiViewerTableNameSelectDlg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiViewerTableNameSelectDlg.cpp; sourceTree = "<group>"; };
+		83505EA4150CA60F00FCFF80 /* MultiViewerTableNameSelectDlg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiViewerTableNameSelectDlg.h; sourceTree = "<group>"; };
+		83505ECA150CA60F00FCFF80 /* SQLData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SQLData.cpp; sourceTree = "<group>"; };
+		83505ECB150CA60F00FCFF80 /* SQLData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLData.h; sourceTree = "<group>"; };
+		83505ECD150CA60F00FCFF80 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		83505ECE150CA60F00FCFF80 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		83505ECF150CA60F00FCFF80 /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
+		83505ED0150CA60F00FCFF80 /* SqliteReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SqliteReader.cpp; sourceTree = "<group>"; };
+		83505ED1150CA60F00FCFF80 /* SqliteReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteReader.h; sourceTree = "<group>"; };
+		83505ED2150CA60F00FCFF80 /* SQLReaderBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SQLReaderBase.cpp; sourceTree = "<group>"; };
+		83505ED3150CA60F00FCFF80 /* SQLReaderBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLReaderBase.h; sourceTree = "<group>"; };
+		83505ED4150CA60F00FCFF80 /* SQLUtil .cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "SQLUtil .cpp"; sourceTree = "<group>"; };
+		83505ED5150CA60F00FCFF80 /* SQLUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLUtil.h; sourceTree = "<group>"; };
+		83505ED6150CA60F00FCFF80 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83505DB1150C8EF800FCFF80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83505DB9150C8EF800FCFF80 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83505DA9150C8EF700FCFF80 = {
+			isa = PBXGroup;
+			children = (
+				83505E75150CA60F00FCFF80 /* source */,
+				83505DB7150C8EF800FCFF80 /* Frameworks */,
+				83505DB5150C8EF800FCFF80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83505DB5150C8EF800FCFF80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83505DB4150C8EF800FCFF80 /* MultiDBViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83505DB7150C8EF800FCFF80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83505DB8150C8EF800FCFF80 /* Cocoa.framework */,
+				83505DBA150C8EF800FCFF80 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83505DBA150C8EF800FCFF80 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83505DBB150C8EF800FCFF80 /* AppKit.framework */,
+				83505DBC150C8EF800FCFF80 /* CoreData.framework */,
+				83505DBD150C8EF800FCFF80 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		83505E75150CA60F00FCFF80 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				83505E76150CA60F00FCFF80 /* Config.cpp */,
+				83505E77150CA60F00FCFF80 /* Config.h */,
+				83505E89150CA60F00FCFF80 /* CubridReader.cpp */,
+				83505E8A150CA60F00FCFF80 /* CubridReader.h */,
+				83505E8B150CA60F00FCFF80 /* datastruct */,
+				83505E92150CA60F00FCFF80 /* GridRender.cpp */,
+				83505E93150CA60F00FCFF80 /* GridRender.h */,
+				83505E94150CA60F00FCFF80 /* MainFrame.cpp */,
+				83505E95150CA60F00FCFF80 /* MainFrame.h */,
+				83505E96150CA60F00FCFF80 /* ml */,
+				83505E99150CA60F00FCFF80 /* MultiViewerApp.cpp */,
+				83505E9A150CA60F00FCFF80 /* MultiViewerApp.h */,
+				83505E9B150CA60F00FCFF80 /* MultiViewerColDataDlg.cpp */,
+				83505E9C150CA60F00FCFF80 /* MultiViewerColDataDlg.h */,
+				83505E9D150CA60F00FCFF80 /* MultiViewerConnectDlg.cpp */,
+				83505E9E150CA60F00FCFF80 /* MultiViewerConnectDlg.h */,
+				83505E9F150CA60F00FCFF80 /* MultiViewerMain.cpp */,
+				83505EA0150CA60F00FCFF80 /* MultiViewerMain.h */,
+				83505EA1150CA60F00FCFF80 /* MultiViewerTableNameDlg.cpp */,
+				83505EA2150CA60F00FCFF80 /* MultiViewerTableNameDlg.h */,
+				83505EA3150CA60F00FCFF80 /* MultiViewerTableNameSelectDlg.cpp */,
+				83505EA4150CA60F00FCFF80 /* MultiViewerTableNameSelectDlg.h */,
+				83505ECA150CA60F00FCFF80 /* SQLData.cpp */,
+				83505ECB150CA60F00FCFF80 /* SQLData.h */,
+				83505ECC150CA60F00FCFF80 /* sqlite */,
+				83505ED0150CA60F00FCFF80 /* SqliteReader.cpp */,
+				83505ED1150CA60F00FCFF80 /* SqliteReader.h */,
+				83505ED2150CA60F00FCFF80 /* SQLReaderBase.cpp */,
+				83505ED3150CA60F00FCFF80 /* SQLReaderBase.h */,
+				83505ED4150CA60F00FCFF80 /* SQLUtil .cpp */,
+				83505ED5150CA60F00FCFF80 /* SQLUtil.h */,
+				83505ED6150CA60F00FCFF80 /* stdafx.h */,
+			);
+			name = source;
+			path = ../source;
+			sourceTree = "<group>";
+		};
+		83505E8B150CA60F00FCFF80 /* datastruct */ = {
+			isa = PBXGroup;
+			children = (
+				83505E8C150CA60F00FCFF80 /* Array2D.cpp */,
+				83505E8D150CA60F00FCFF80 /* Array2D.h */,
+				83505E8E150CA60F00FCFF80 /* VecArray1D.cpp */,
+				83505E8F150CA60F00FCFF80 /* VecArray1D.h */,
+				83505E90150CA60F00FCFF80 /* VecArray2D.cpp */,
+				83505E91150CA60F00FCFF80 /* VecArray2D.h */,
+			);
+			path = datastruct;
+			sourceTree = "<group>";
+		};
+		83505E96150CA60F00FCFF80 /* ml */ = {
+			isa = PBXGroup;
+			children = (
+				83505E97150CA60F00FCFF80 /* MidInter .cpp */,
+				83505E98150CA60F00FCFF80 /* MidInter.h */,
+			);
+			path = ml;
+			sourceTree = "<group>";
+		};
+		83505ECC150CA60F00FCFF80 /* sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				83505ECD150CA60F00FCFF80 /* sqlite3.c */,
+				83505ECE150CA60F00FCFF80 /* sqlite3.h */,
+				83505ECF150CA60F00FCFF80 /* sqlite3ext.h */,
+			);
+			path = sqlite;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83505DB3150C8EF800FCFF80 /* MultiDBViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83505DD2150C8EFA00FCFF80 /* Build configuration list for PBXNativeTarget "MultiDBViewer" */;
+			buildPhases = (
+				83505DB0150C8EF800FCFF80 /* Sources */,
+				83505DB1150C8EF800FCFF80 /* Frameworks */,
+				83505DB2150C8EF800FCFF80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiDBViewer;
+			productName = MultiDBViewer;
+			productReference = 83505DB4150C8EF800FCFF80 /* MultiDBViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83505DAB150C8EF700FCFF80 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 83505DAE150C8EF700FCFF80 /* Build configuration list for PBXProject "MultiDBViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 83505DA9150C8EF700FCFF80;
+			productRefGroup = 83505DB5150C8EF800FCFF80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83505DB3150C8EF800FCFF80 /* MultiDBViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83505DB2150C8EF800FCFF80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83505DB0150C8EF800FCFF80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83505ED9150CA60F00FCFF80 /* Config.cpp in Sources */,
+				83505EE1150CA60F00FCFF80 /* CubridReader.cpp in Sources */,
+				83505EE2150CA60F00FCFF80 /* Array2D.cpp in Sources */,
+				83505EE3150CA60F00FCFF80 /* VecArray1D.cpp in Sources */,
+				83505EE4150CA60F00FCFF80 /* VecArray2D.cpp in Sources */,
+				83505EE5150CA60F00FCFF80 /* GridRender.cpp in Sources */,
+				83505EE6150CA60F00FCFF80 /* MainFrame.cpp in Sources */,
+				83505EE7150CA60F00FCFF80 /* MidInter .cpp in Sources */,
+				83505EE8150CA60F00FCFF80 /* MultiViewerApp.cpp in Sources */,
+				83505EE9150CA60F00FCFF80 /* MultiViewerColDataDlg.cpp in Sources */,
+				83505EEA150CA60F00FCFF80 /* MultiViewerConnectDlg.cpp in Sources */,
+				83505EEB150CA60F00FCFF80 /* MultiViewerMain.cpp in Sources */,
+				83505EEC150CA60F00FCFF80 /* MultiViewerTableNameDlg.cpp in Sources */,
+				83505EED150CA60F00FCFF80 /* MultiViewerTableNameSelectDlg.cpp in Sources */,
+				83505F11150CA60F00FCFF80 /* SQLData.cpp in Sources */,
+				83505F12150CA60F00FCFF80 /* sqlite3.c in Sources */,
+				83505F13150CA60F00FCFF80 /* SqliteReader.cpp in Sources */,
+				83505F14150CA60F00FCFF80 /* SQLReaderBase.cpp in Sources */,
+				83505F15150CA60F00FCFF80 /* SQLUtil .cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		83505DD0150C8EFA00FCFF80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CONFIGURATION_BUILD_DIR = ../bin_xcode;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				New_Setting = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-I/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/wx/include/mac-unicode-debug-static-2.8",
+					"-I/Users/nahanmil/Documents/project/wxMac-2.8.12/include",
+					"-I/Users/nahanmil/Documents/project/wxMac-2.8.12/contrib/include",
+					"-D_FILE_OFFSET_BITS=64",
+					"-D_LARGE_FILES",
+					"-D__WXDEBUG__",
+					"-D__WXMAC__",
+				);
+				OTHER_LDFLAGS = (
+					"-L/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib",
+					"-arch",
+					i386,
+					"-framework",
+					IOKit,
+					"-framework",
+					Carbon,
+					"-framework",
+					Cocoa,
+					"-framework",
+					System,
+					"-framework",
+					QuickTime,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_macud_richtext-2.8.a",
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_macud_aui-2.8.a",
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_macud_xrc-2.8.a",
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_macud_qa-2.8.a",
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_macud_html-2.8.a",
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_macud_adv-2.8.a",
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_macud_core-2.8.a",
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_base_carbonud_xml-2.8.a",
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_base_carbonud_net-2.8.a",
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_base_carbonud-2.8.a",
+					"-framework",
+					WebKit,
+					"-lexpat",
+					"-lwxregexud-2.8",
+					"-lwxtiffd-2.8",
+					"-lwxjpegd-2.8",
+					"-lwxpngd-2.8",
+					"-lz",
+					"-lpthread",
+					"-liconv",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		83505DD1150C8EFA00FCFF80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CONFIGURATION_BUILD_DIR = ../bin_xcode;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				New_Setting = "";
+				OTHER_CFLAGS = (
+					"-I/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/wx/include/mac-unicode-debug-static-2.8",
+					"-I/Users/nahanmil/Documents/project/wxMac-2.8.12/include",
+					"-I/Users/nahanmil/Documents/project/wxMac-2.8.12/contrib/include",
+					"-D_FILE_OFFSET_BITS=64",
+					"-D_LARGE_FILES",
+					"-D__WXDEBUG__",
+					"-D__WXMAC__",
+				);
+				OTHER_LDFLAGS = (
+					"-L/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib",
+					"-arch",
+					i386,
+					"-framework",
+					IOKit,
+					"-framework",
+					Carbon,
+					"-framework",
+					Cocoa,
+					"-framework",
+					System,
+					"-framework",
+					QuickTime,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_macud_richtext-2.8.a",
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_macud_aui-2.8.a",
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_macud_xrc-2.8.a",
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_macud_qa-2.8.a",
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_macud_html-2.8.a",
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_macud_adv-2.8.a",
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_macud_core-2.8.a",
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_base_carbonud_xml-2.8.a",
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_base_carbonud_net-2.8.a",
+					"/Users/nahanmil/Documents/project/wxMac-2.8.12/build-carbon-debug/lib/libwx_base_carbonud-2.8.a",
+					"-framework",
+					WebKit,
+					"-lexpat",
+					"-lwxregexud-2.8",
+					"-lwxtiffd-2.8",
+					"-lwxjpegd-2.8",
+					"-lwxpngd-2.8",
+					"-lz",
+					"-lpthread",
+					"-liconv",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		83505DD3150C8EFA00FCFF80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiDBViewer/MultiDBViewer-Prefix.pch";
+				INFOPLIST_FILE = "MultiDBViewer/MultiDBViewer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../source/cubrid-cci-win/lib\"",
+					"\"$(SRCROOT)/../source/cubrid-cci-win/lib64\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		83505DD4150C8EFA00FCFF80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiDBViewer/MultiDBViewer-Prefix.pch";
+				INFOPLIST_FILE = "MultiDBViewer/MultiDBViewer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../source/cubrid-cci-win/lib\"",
+					"\"$(SRCROOT)/../source/cubrid-cci-win/lib64\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83505DAE150C8EF700FCFF80 /* Build configuration list for PBXProject "MultiDBViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83505DD0150C8EFA00FCFF80 /* Debug */,
+				83505DD1150C8EFA00FCFF80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83505DD2150C8EFA00FCFF80 /* Build configuration list for PBXNativeTarget "MultiDBViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83505DD3150C8EFA00FCFF80 /* Debug */,
+				83505DD4150C8EFA00FCFF80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83505DAB150C8EF700FCFF80 /* Project object */;
+}

@@ -1,0 +1,4 @@
+[General]
+
+[DBTable]
+RecodePerTable = 50

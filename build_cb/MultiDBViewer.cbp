@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="DBMultiViewer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Win_Debug">
+				<Option platforms="Windows;" />
+				<Option output="../bin_cb/WinDebug/DBMultiViewer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../bin_cb/WinDebug" />
+				<Option object_output="WinDebug/obj/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-pipe" />
+					<Add option="-mthreads" />
+					<Add option='[[if (PLATFORM == PLATFORM_MSW &amp;&amp; (GetCompilerFactory().GetCompilerVersionString(_T(&quot;gcc&quot;)) &gt;= _T(&quot;4.0.0&quot;))) print(_T(&quot;-Wno-attributes&quot;));]]' />
+					<Add option="-D__GNUWIN32__" />
+					<Add option="-D__WXMSW__" />
+					<Add directory="%WXWIN%/lib/gcc_dll/mswu" />
+					<Add directory="%WXWIN%/include" />
+					<Add directory="../source/cubrid-cci-win/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="%WXWIN%/lib/gcc_dll/mswu" />
+					<Add directory="%WXWIN%/include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxmsw29ud.a" />
+					<Add library="../source/cubrid-cci-win/lib/cascci.lib" />
+					<Add library="../source/cubrid-cci-win/lib/libcasccidll.a" />
+					<Add directory="%WXWIN%/lib/gcc_dll" />
+					<Add directory="../source/cubrid-cci-win/lib" />
+				</Linker>
+			</Target>
+			<Target title="Win_Release">
+				<Option platforms="Windows;" />
+				<Option output="../bin_cb/WinRelease/DBMultiViewer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../bin_cb/WinRelease" />
+				<Option object_output="WinRelease/obj/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-pipe" />
+					<Add option="-mthreads" />
+					<Add option='[[if (PLATFORM == PLATFORM_MSW &amp;&amp; (GetCompilerFactory().GetCompilerVersionString(_T(&quot;gcc&quot;)) &gt;= _T(&quot;4.0.0&quot;))) print(_T(&quot;-Wno-attributes&quot;));]]' />
+					<Add option="-D__GNUWIN32__" />
+					<Add option="-D__WXMSW__" />
+					<Add directory="%WXWIN%/lib/gcc_dll/mswu" />
+					<Add directory="%WXWIN%/include" />
+					<Add directory="%WXWIN%/contrib/include" />
+					<Add directory="../source/cubrid-cci-win/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="%WXWIN%/lib/gcc_dll/mswu" />
+					<Add directory="%WXWIN%/include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libwxmsw29u.a" />
+					<Add library="../source/cubrid-cci-win/lib/cascci.lib" />
+					<Add library="../source/cubrid-cci-win/lib/libcasccidll.a" />
+					<Add directory="%WXWIN%/lib/gcc_dll" />
+				</Linker>
+			</Target>
+			<Target title="Linux_Debug">
+				<Option platforms="Unix;" />
+				<Option output="../bin_cb/LinuxDebug/DBMultiViewer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../bin_cb/LinuxDebug" />
+				<Option object_output="LinuxDebug/obj/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="`wx-config --cflags`" />
+					<Add directory="../source/cubrid-cci-linux/include" />
+				</Compiler>
+				<Linker>
+					<Add option="`wx-config --libs`" />
+				</Linker>
+			</Target>
+			<Target title="Linux_Release">
+				<Option platforms="Unix;" />
+				<Option output="../bin_cb/LinuxRelease/DBMultiViewer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../bin_cb/LinuxRelease" />
+				<Option object_output="LinuxRelease/obj/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="`wx-config --cflags`" />
+					<Add directory="../source/cubrid-cci-linux/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="`wx-config --libs`" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DwxUSE_UNICODE" />
+		</Compiler>
+		<Unit filename="../source/Config.cpp" />
+		<Unit filename="../source/Config.h" />
+		<Unit filename="../source/CubridReader.cpp" />
+		<Unit filename="../source/CubridReader.h" />
+		<Unit filename="../source/GridUtil.cpp" />
+		<Unit filename="../source/GridUtil.h" />
+		<Unit filename="../source/MainFrame.cpp" />
+		<Unit filename="../source/MainFrame.h" />
+		<Unit filename="../source/MultiViewerApp.cpp" />
+		<Unit filename="../source/MultiViewerApp.h" />
+		<Unit filename="../source/MultiViewerColDataDlg.cpp" />
+		<Unit filename="../source/MultiViewerColDataDlg.h" />
+		<Unit filename="../source/MultiViewerConnectDlg.cpp" />
+		<Unit filename="../source/MultiViewerConnectDlg.h" />
+		<Unit filename="../source/MultiViewerMain.cpp" />
+		<Unit filename="../source/MultiViewerMain.h" />
+		<Unit filename="../source/MultiViewerTableNameDlg.cpp" />
+		<Unit filename="../source/MultiViewerTableNameDlg.h" />
+		<Unit filename="../source/MultiViewerTableNameSelectDlg.cpp" />
+		<Unit filename="../source/MultiViewerTableNameSelectDlg.h" />
+		<Unit filename="../source/SQLData.cpp" />
+		<Unit filename="../source/SQLData.h" />
+		<Unit filename="../source/SQLReaderBase.cpp" />
+		<Unit filename="../source/SQLReaderBase.h" />
+		<Unit filename="../source/SQLUtil .cpp" />
+		<Unit filename="../source/SQLUtil.h" />
+		<Unit filename="../source/SqliteReader.cpp" />
+		<Unit filename="../source/SqliteReader.h" />
+		<Unit filename="../source/cubrid-cci-linux/include/cas_cci.h" />
+		<Unit filename="../source/cubrid-cci-win/include/cas_cci.h" />
+		<Unit filename="../source/cubrid-cci-win/include/cas_error.h" />
+		<Unit filename="../source/datastruct/Array2D.cpp" />
+		<Unit filename="../source/datastruct/Array2D.h" />
+		<Unit filename="../source/datastruct/VecArray1D.cpp" />
+		<Unit filename="../source/datastruct/VecArray1D.h" />
+		<Unit filename="../source/datastruct/VecArray2D.cpp" />
+		<Unit filename="../source/datastruct/VecArray2D.h" />
+		<Unit filename="../source/ml/MidInter .cpp" />
+		<Unit filename="../source/ml/MidInter.h" />
+		<Unit filename="../source/sqlite/sqlite3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../source/sqlite/sqlite3.h" />
+		<Unit filename="../source/sqlite/sqlite3ext.h" />
+		<Unit filename="../source/stdafx.h" />
+		<Unit filename="../source/vld10/vld.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

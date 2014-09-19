@@ -1,0 +1,212 @@
+
+SELECT name, sql FROM sqlite_master WHERE type='table' ORDER BY name;
+PRAGMA TABLE_INFO(Suggest);
+PRAGMA TABLE_INFO(Test);
+SELECT name, sql FROM sqlite_master WHERE type='index' ORDER BY name;
+SELECT rowid, *  FROM Suggest ORDER BY rowid; 
+
+
+
+
+
+
+PRAGMA TABLE_INFO(Suggest);
+
+ [1] = column# (0...)
+> [2] = column name
+> [3] = column affinity/type
+> [...]
+
+[4] = flag: is the column NOT NULL?
+[5] = default value of the column
+[6] = flag: is this column part of the table's PRIMARY KEY?
+
+
+
+
+
+
+
+
+SELECT name, sql FROM sqlite_master WHERE type='table' ORDER BY name;
+PRAGMA TABLE_INFO(Suggest);
+PRAGMA TABLE_INFO(Test);
+SELECT name, sql FROM sqlite_master WHERE type='index' ORDER BY name;
+
+
+// 아래서 부터 output 이라는 필드를 output2 로 변경하는 Sqlite query
+CREATE TEMPORARY TABLE TEMP_TABLE(id INTEGER PRIMARY KEY, input varchar(80), output2 varchar(64));
+INSERT INTO TEMP_TABLE SELECT id, input, output FROM Suggest;
+DROP TABLE Suggest;
+CREATE TABLE Suggest (id INTEGER PRIMARY KEY, input varchar(80), output2 varchar(64));
+INSERT INTO Suggest SELECT id, input, output2 FROM TEMP_TABLE;
+DROP TABLE TEMP_TABLE;
+
+SELECT name, sql FROM sqlite_master WHERE type='table' ORDER BY name;
+PRAGMA TABLE_INFO(Suggest);
+PRAGMA TABLE_INFO(Test);
+SELECT name, sql FROM sqlite_master WHERE type='index' ORDER BY name;
+SELECT name, sql FROM sqlite_master WHERE type='table' ORDER BY name;
+PRAGMA TABLE_INFO(Suggest);
+PRAGMA TABLE_INFO(Test);
+SELECT name, sql FROM sqlite_master WHERE type='index' ORDER BY name;
+SELECT rowid, *  FROM Suggest ORDER BY rowid; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Test 테이블 안 value 라는 column 을 Nuberic 에서 Text 로 변경
+
+CREATE TEMPORARY TABLE TEMP_TABLE(ID INTEGER PRIMARY KEY, Value TEXT);
+INSERT INTO TEMP_TABLE SELECT ID, Value FROM Test;
+DROP TABLE Test;
+CREATE TABLE Test (ID INTEGER PRIMARY KEY, Value TEXT);
+INSERT INTO Test SELECT ID, Value FROM TEMP_TABLE;
+DROP TABLE TEMP_TABLE;
+
+
+SELECT name, sql FROM sqlite_master WHERE type='table' ORDER BY name;
+PRAGMA TABLE_INFO(Suggest);
+PRAGMA TABLE_INFO(Test);
+SELECT name, sql FROM sqlite_master WHERE type='index' ORDER BY name;
+SELECT name, sql FROM sqlite_master WHERE type='table' ORDER BY name;
+PRAGMA TABLE_INFO(Suggest);
+PRAGMA TABLE_INFO(Test);
+SELECT name, sql FROM sqlite_master WHERE type='index' ORDER BY name;
+SELECT rowid, *  FROM Suggest ORDER BY rowid; 
+
+
+
+
+
+
+CREATE TEMPORARY TABLE TEMP_TABLE(id INTEGER PRIMARY KEY, input varchar(80), output2 varchar(64));
+INSERT INTO TEMP_TABLE SELECT id, input, output FROM Suggest;
+INSERT INTO TEMP_TABLE SELECT id, input, output2 FROM Suggest;
+
+DROP TABLE Suggest;
+CREATE TABLE Suggest (id INTEGER PRIMARY KEY, input varchar(80), output2 varchar(64));
+
+
+INSERT INTO Suggest SELECT id, input, output2 FROM TEMP_TABLE;
+INSERT INTO Suggest SELECT id, input, output FROM TEMP_TABLE;
+
+DROP TABLE TEMP_TABLE;
+
+
+
+
+
+
+vector<ST_ColInfo> vecColInfo = mSQLReader.GetTableInfo(nTableIndex, true);
+
+
+
+
+
+
+
+
+
+
+
+output 이라는 column 삭제시
+CREATE TEMPORARY TABLE TEMP_TABLE(id INTEGER PRIMARY KEY, input varchar(80));
+INSERT INTO TEMP_TABLE SELECT id, input FROM Suggest;
+DROP TABLE Suggest;
+CREATE TABLE Suggest (id INTEGER PRIMARY KEY, input varchar(80));
+INSERT INTO Suggest(id, input) SELECT id, input FROM TEMP_TABLE;
+DROP TABLE TEMP_TABLE;
+
+
+
+newColName newColType 이라는 새로운  col 생성
+
+CREATE TEMPORARY TABLE TEMP_TABLE(ID, Value);
+INSERT INTO TEMP_TABLE SELECT ID, Value FROM Test;
+DROP TABLE Test;
+CREATE TABLE Test (newColName newColType, ID INTEGER PRIMARY KEY, Value TEXT);
+INSERT INTO Test(ID, Value) SELECT ID, Value FROM TEMP_TABLE;
+DROP TABLE TEMP_TABLE;
+
+
+
+CREATE TEMPORARY TABLE TEMP_TABLE(id, input, output);
+INSERT INTO TEMP_TABLE SELECT id, input, output FROM Suggest;
+DROP TABLE Suggest;
+CREATE TABLE Suggest (newCol newColType, id INTEGER PRIMARY KEY, input varchar(80), output varchar(64));
+INSERT INTO Suggest(id, input, output) SELECT id, input, output FROM TEMP_TABLE;
+DROP TABLE TEMP_TABLE;
+
+
+
+새로운 row 추가시 
+INSERT INTO Test(ID) VALUES(NULL);
+
+
+실제로 값 수정시
+UPDATE Test SET Value=? WHERE rowid=19;
+
+
+
+INSERT INTO Suggest(id) VALUES(NULL);
+SELECT rowid, *  FROM Suggest ORDER BY rowid; 
+UPDATE Suggest SET input=? WHERE rowid=352;
+UPDATE Suggest SET output=? WHERE rowid=352;
+
+
+
+INSERT INTO TestTable(Col1) VALUES(NULL);
+SELECT rowid, *  FROM TestTable ORDER BY rowid; 
+
+
+wxChar is defined to be
+
+    * char when wxUSE_UNICODE==0
+    * wchar_t when wxUSE_UNICODE==1 (the default). 
+
+
+wcstombs()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE TableName (ID INTEGER PRIMARY KEY, input2 TEXT, output2 TEXT);
+
+
+
+
+
+
+
+DROP TABLE Suggest;
+SELECT name, sql FROM sqlite_master WHERE type='table' ORDER BY name;
+PRAGMA TABLE_INFO(Test);
+SELECT name, sql FROM sqlite_master WHERE type='index' ORDER BY name;
+SELECT rowid, *  FROM Test ORDER BY rowid; 
+
+
+
+

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="_APP">
+      <UniqueIdentifier>{a5802c17-adc0-4e05-9539-6a14e55242e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_UI">
+      <UniqueIdentifier>{422a70c2-a05e-4419-a4a3-aaa285b96ed6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cubrid-cci-win">
+      <UniqueIdentifier>{91e2e907-b669-4421-8a97-80425b793cc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cubrid-cci-win\include">
+      <UniqueIdentifier>{80c62acc-5fd3-4051-b74c-d97a73ddca99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="datastruct">
+      <UniqueIdentifier>{43a96c30-a929-44c8-bb68-32a28303732a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ml">
+      <UniqueIdentifier>{a05540d6-0309-48dd-97ff-89da84debceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sqlite">
+      <UniqueIdentifier>{c5b746a6-0857-4c1c-9154-b7eb5e7e8ee5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\cubrid-cci-win\include\cas_cci.h">
+      <Filter>cubrid-cci-win\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\cubrid-cci-win\include\cas_error.h">
+      <Filter>cubrid-cci-win\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\datastruct\Array2D.h">
+      <Filter>datastruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\datastruct\VecArray1D.h">
+      <Filter>datastruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\datastruct\VecArray2D.h">
+      <Filter>datastruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\MultiViewerApp.h">
+      <Filter>_APP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\MainFrame.h">
+      <Filter>_UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\MultiViewerColDataDlg.h">
+      <Filter>_UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\MultiViewerConnectDlg.h">
+      <Filter>_UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\MultiViewerTableNameDlg.h">
+      <Filter>_UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\MultiViewerTableNameSelectDlg.h">
+      <Filter>_UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ml\MidInter.h">
+      <Filter>ml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\sqlite\sqlite3.h">
+      <Filter>sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\sqlite\sqlite3ext.h">
+      <Filter>sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SqliteReader.h" />
+    <ClInclude Include="..\source\SQLReaderBase.h" />
+    <ClInclude Include="..\source\SQLUtil.h" />
+    <ClInclude Include="..\source\Config.h" />
+    <ClInclude Include="..\source\CubridReader.h" />
+    <ClInclude Include="..\source\GridUtil.h" />
+    <ClInclude Include="..\source\SQLData.h" />
+    <ClInclude Include="..\source\MultiViewerMain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\datastruct\VecArray1D.cpp">
+      <Filter>datastruct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\datastruct\VecArray2D.cpp">
+      <Filter>datastruct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\datastruct\Array2D.cpp">
+      <Filter>datastruct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\MultiViewerApp.cpp">
+      <Filter>_APP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\MainFrame.cpp">
+      <Filter>_UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\MultiViewerColDataDlg.cpp">
+      <Filter>_UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\MultiViewerConnectDlg.cpp">
+      <Filter>_UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\MultiViewerTableNameDlg.cpp">
+      <Filter>_UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\MultiViewerTableNameSelectDlg.cpp">
+      <Filter>_UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ml\MidInter .cpp">
+      <Filter>ml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\sqlite\sqlite3.c">
+      <Filter>sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SqliteReader.cpp" />
+    <ClCompile Include="..\source\SQLReaderBase.cpp" />
+    <ClCompile Include="..\source\SQLUtil .cpp" />
+    <ClCompile Include="..\source\Config.cpp" />
+    <ClCompile Include="..\source\CubridReader.cpp" />
+    <ClCompile Include="..\source\GridUtil.cpp" />
+    <ClCompile Include="..\source\SQLData.cpp" />
+    <ClCompile Include="..\source\MultiViewerMain.cpp" />
+  </ItemGroup>
+</Project>
